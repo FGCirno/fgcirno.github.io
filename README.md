@@ -5,8 +5,8 @@ I have no idea how to program, but I'm going to try my best.
 <summary>Code Referenced From</summary>
 <br>
   
-https:www.w3schools.com
-https://github.com/Tenrys
+https://www.w3schools.com <br>
+https://github.com/Tenrys <br>
 
 </details>
 
@@ -16,7 +16,7 @@ https://github.com/Tenrys
 <summary>Fonts Used</summary>
 <br>
   
-"Courier" by Howard Kettler
+"Courier" by Howard Kettler <br>
 "A Goblin Appears" by Chequered Ink
 
 </details>
