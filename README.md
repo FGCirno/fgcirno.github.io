@@ -20,3 +20,12 @@ https://github.com/Tenrys <br>
 "A Goblin Appears" by Chequered Ink
 
 </details>
+
+
+<details>
+<summary>Inspiration</summary>
+<br>
+  
+https://insect.christmas for being awesome <br>
+
+</details>
