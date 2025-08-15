@@ -1,107 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color: #111313; overflow: hidden;"> 
-<style>* {
-  box-sizing: border-box;
-}
-
-.date{
- font-family: 'Courier New', Courier, monospace;
- font-size: 16px;
- padding: 10px;
- color: orange;
-}
-
-.entry{
- font-family: 'Courier New', Courier, monospace;
- font-size: 16px;
- padding-bottom: 15px;
- color: white;
-}
-
-body {
-  font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
-  background: rgb(11,11,11,1);
-}
-
-/* Header/Blog Title */
-.header {
-    margin: auto;
-      text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
-  width: 700px;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-margin: auto;
-  border-radius: 15px 15px 15px 15px;
-text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
-  width: 1300px;
-  height: 700px;
-  padding-bottom: 10px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background: rgb(11,11,11,1);
-  padding: 20px;
-  margin-top: 20px;
-  max-height: 700px;
-}
-
-a{
-  color:aquamarine
-}
-
-</style>
-
+  <body style="background-color: #111313; overflow: hidden">
     <head>
-          <style>
+      <link rel="stylesheet" href="styles.css" />
+      <style>
         body {
-            opacity: 0;
-            animation: fadeIn 2s forwards;
+          opacity: 0;
+          animation: fadeIn 1.5s forwards;
         }
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+          to {
+            opacity: 1;
+          }
         }
-    </style>
-        <meta charset="UTF-8">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Starfall Commissions</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> 
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"> 
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
+      </style>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Starfall Commissions</title>
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="img/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="img/favicon-96x96.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="img/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/manifest.json" />
     </head>
 
-<div class="header" style="color: orange;">
-🏳️‍🌈 starfall.commissions 🏳️‍⚧️
-</div>
+    <div class="header" style="color: orange">🏳️‍🌈 starfall.commissions 🏳️‍⚧️</div>
 
-<div class="row" style="color: white;">
-  <div class="leftcolumn">
-    <main>
-    <div class="card" id="navbar" style="overflow-y: scroll; overflow-x: hidden; scrollbar-color: rgb(15,15,15,1) rgb(30,30,30,1);">
-       
-      <p>Here is all of the art I've had commissioned. Many of these are of my Final Fantasy XIV character Minerva. <br>Click on any commission to see the art in full detail</p> 
-      <p><a href="https://bsky.app/profile/chougokuoozaru.bsky.social">ChouGokuOozaru</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://bsky.app/profile/elma0062.bsky.social">Elma0062</a></p>
-      <a href="img/commissions/chou.png"><img src="img/commissions/chou.png" style="max-width: 49%;"></a> <a href="img/commissions/crybun.jpg"><img src="img/commissions/crybun.jpg" style="max-width: 25%;"></a>
-       <p><a href="https://bsky.app/profile/frogletcomics.bsky.social">FrogletComics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://bsky.app/profile/hiroita11.bsky.social">Hiroita11</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bsky.app/profile/samlizzy71.bsky.social">SamLizzy71</a></p>
-       <a href="img/commissions/froglet.png"><img src="img/commissions/froglet.png" style="max-width: 25%;"></a>  &nbsp;&nbsp;&nbsp;&nbsp;<a href="img/commissions/hiroita.png"><img src="img/commissions/hiroita.png" style="max-width: 25%;" ></a>      &nbsp;&nbsp;&nbsp;&nbsp;   <a href="img/commissions/samlizzy71.jpg"><img src="img/commissions/samlizzy71.jpg" style="max-width: 25%;"></a>
-       <p><a href="https://x.com/oscar_get">oscar_get</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://bsky.app/profile/palastel.bsky.social">Palastel</a></p>
-       <a href="img/commissions/oscar_get.png"><img src="img/commissions/oscar_get.png" style="max-width: 30%;"></a> <a href="img/commissions/oscar_get2.png"><img src="img/commissions/oscar_get2.png" style="max-width: 30%;"></a> <a href="img/commissions/palastel.png"><img src="img/commissions/palastel.png" style="max-width: 24.7%;"></a>
-       <p><a href="https://x.com/SutaBuns/">Sutabuns</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bsky.app/profile/wubbwarg.bsky.social">Wubbwarg</a></p>
-       <a href="img/commissions/sutabuns.png"><img src="img/commissions/sutabuns.png" style="max-width: 40%;"></a> &nbsp;&nbsp;&nbsp; <a href="img/commissions/wubbwarg.png"><img src="img/commissions/wubbwarg.png" style="max-width: 35%;"></a>
-       <p><a href="https://x.com/13521meu">Meu</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://bsky.app/profile/osulan.bsky.social">Osulan</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Znassysam</a></p>
-        <a href="img/commissions/meu.png"><img src="img/commissions/meu.png" style="max-width: 21.3%;"></a> <a href="img/commissions/osulan.png"><img src="img/commissions/osulan.png" style="max-width: 21%;"></a>  <a href="img/commissions/znassysam.png"><img src="img/commissions/znassysam.png" style="max-width: 30%;"></a>
+    <div class="row" style="color: white">
+      <div class="leftcolumn">
+        <main>
+          <div
+            class="card"
+            id="navbar"
+            style="
+              overflow-y: scroll;
+              overflow-x: hidden;
+              scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);
+            "
+          >
+            <p>
+              Here is all of the art I've had commissioned. Many of these are of
+              my Final Fantasy XIV character Minerva. <br />Click on any
+              commission to see the art in full detail
+            </p>
+            <p>
+              <a href="https://bsky.app/profile/chougokuoozaru.bsky.social"
+                >ChouGokuOozaru</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://bsky.app/profile/elma0062.bsky.social"
+                >Elma0062</a
+              >
+            </p>
+            <a href="img/commissions/chou.png"
+              ><img src="img/commissions/chou.png" style="max-width: 49%"
+            /></a>
+            <a href="img/commissions/crybun.jpg"
+              ><img src="img/commissions/crybun.jpg" style="max-width: 25%"
+            /></a>
+            <p>
+              <a href="https://bsky.app/profile/frogletcomics.bsky.social"
+                >FrogletComics</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://bsky.app/profile/hiroita11.bsky.social"
+                >Hiroita11</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                href="https://bsky.app/profile/samlizzy71.bsky.social"
+                >SamLizzy71</a
+              >
+            </p>
+            <a href="img/commissions/froglet.png"
+              ><img src="img/commissions/froglet.png" style="max-width: 25%"
+            /></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="img/commissions/hiroita.png"
+              ><img src="img/commissions/hiroita.png" style="max-width: 25%"
+            /></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="img/commissions/samlizzy71.jpg"
+              ><img src="img/commissions/samlizzy71.jpg" style="max-width: 25%"
+            /></a>
+            <p>
+              <a href="https://x.com/oscar_get">oscar_get</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://bsky.app/profile/palastel.bsky.social"
+                >Palastel</a
+              >
+            </p>
+            <a href="img/commissions/oscar_get.png"
+              ><img src="img/commissions/oscar_get.png" style="max-width: 30%"
+            /></a>
+            <a href="img/commissions/oscar_get2.png"
+              ><img src="img/commissions/oscar_get2.png" style="max-width: 30%"
+            /></a>
+            <a href="img/commissions/palastel.png"
+              ><img src="img/commissions/palastel.png" style="max-width: 24.7%"
+            /></a>
+            <p>
+              <a href="https://x.com/SutaBuns/">Sutabuns</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                href="https://bsky.app/profile/wubbwarg.bsky.social"
+                >Wubbwarg</a
+              >
+            </p>
+            <a href="img/commissions/sutabuns.png"
+              ><img src="img/commissions/sutabuns.png" style="max-width: 40%"
+            /></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="img/commissions/wubbwarg.png"
+              ><img src="img/commissions/wubbwarg.png" style="max-width: 35%"
+            /></a>
+            <p>
+              <a href="https://x.com/13521meu">Meu</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://bsky.app/profile/osulan.bsky.social">Osulan</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Znassysam</a>
+            </p>
+            <a href="img/commissions/meu.png"
+              ><img src="img/commissions/meu.png" style="max-width: 21.3%"
+            /></a>
+            <a href="img/commissions/osulan.png"
+              ><img src="img/commissions/osulan.png" style="max-width: 21%"
+            /></a>
+            <a href="img/commissions/znassysam.png"
+              ><img src="img/commissions/znassysam.png" style="max-width: 30%"
+            /></a>
+          </div>
+        </main>
+        <a href="https://starfall.gallery" style="padding-left: 20px"
+          >go back</a
+        >
+      </div>
     </div>
-    </main>
-    <a href="https://starfall.gallery" style="padding-left: 20px;">go back</a>
-  </div>
-</div>
+  </body>
+</html>

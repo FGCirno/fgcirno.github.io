@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100vh">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .bunk {
+        opacity: 0;
+        animation: fadeIn 1.5s forwards 0.5s;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starfall Blog</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+
+  <body
+    style="
+      background-color: #111313;
+      overflow: hidden;
+      min-height: 100vh;
+      box-sizing: inherit;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div class="bg"></div>
+    <div class="header" style="color: orange">
+      🏳️‍🌈starfall.blog🏳️‍⚧️
+      <p class="subheader" style="color: white">
+        an isolated alley of the mind
+      </p>
+    </div>
+
+    <div style="color: white">
+      <div class="leftcolumn">
+        <main>
+          <div
+            class="card"
+            id="navbar"
+            style="
+              overflow-x: hidden;
+              scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);
+            "
+          >
+
+                  <div id="buttons">
+          <a
+            href='blog.html'
+            class="buttons-blog"
+            style=""
+          >
+            07/09/2025
+          </a>
+          </div>
+            <div class="bunk" style="width: 90%;">
+              <p>
+                I've always had severe allergies. The air quality would be just
+                bad enough, I'd have just the right amount of dust in the room
+                and that'd leave me sneezing for 12hrs straight. Often times
+                I'll have no idea what triggered my allergies, leaving me
+                suffering with no idea for how to improve my situation. Just
+                this last week, something triggered my allergies and it left me
+                completely floored. I tried to sleep it off, but I only woke up
+                to the sneezing being worse and completely drained of energy. It
+                feels completely awful. I'm doing better now, but my nose is
+                still stark red with exhaustion and crusty as can be.<br
+                  class="noselect"
+                /><br class="noselect" />Speaking of things in my life getting
+                better, this past month I've picked vocal training back up.
+                Previously when I first came out I tried voice feminization for
+                a few months and just sort of lost the will to continue around
+                the same time my HRT refill was denied. In spite of that, I'm
+                finally back at it even though it's been years. I'm surprised
+                that I've retained some of the pitch control I had from my past
+                vocal training. It's not much, but in training my larynx again
+                I've found myself able to hit higher pitches that I've since
+                lost in my time since I last trained it. More than that, I've
+                gotten some amount of resonance control and I'm quite happy with
+                my results so far. I simply need to apply my fem voice anywhere
+                I can in every day life, and I'll eventually have a voice I can
+                be fully proud of.<br class="noselect" /><br class="noselect" />
+                Might be silly to admit, but I'm looking to Bridget's dub voice
+                from Guilty Gear Strive and Amy Rose from the early 2000s Sonic
+                games as a sort of vocal inspiration. I want that sort of peppy
+                yet not too too high pitched voice as my own. Some circumstance
+                in my life relating to privacy has kept me from actively
+                training much this week (in addition to being as sick as I was
+                the past few days) but I really just need to make myself do it,
+                even if I'm timid about being heard.<br class="noselect" /><br
+                  class="noselect"
+                />
+                Things are going well for me. There's some turbulance like there
+                always is in life, but I'm certain that things will only be
+                better going forwards. I just need to keep doing things to
+                benefit myself (like voice training or even working on this
+                website) and everything will be just fine.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div><a href="https://starfall.gallery/blog">last page </a></div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("date");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

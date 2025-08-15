@@ -12,6 +12,37 @@
   background-color: #1e1e1e;
   width: 500px;
   border-radius: 15px 15px 15px 15px;
+  transition: min-height 0.5s ease-out;
+  position: sticky;
+}
+
+.content {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 0 30px;
+  color: white;
+  max-height: 0;
+  overflow-y: scroll;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  transition: width 0.5s, height 0.5s;
+  transition: max-height 0.5s ease-out;
+}
+
+.buttons-blog {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 10px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  width: 100%;
+  color: orange;;
+  background-color: #1e1e1e;
+  border-radius: 5px 5px 5px 5px;
+  display: block;
+  text-decoration: none;
+  gap: 32px 0;
 }
 
 .buttons {
@@ -34,15 +65,7 @@
   box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 
-.content {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
-  padding: 0 30px;
-  color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
+
 
 body {
   font-family: "Courier New", Courier, monospace;
@@ -78,9 +101,9 @@ body {
   border-radius: 15px 15px 15px 15px;
   text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
     2px 2px 0 #000000;
-  width: 1100px;
-  height: 700px;
-  
+  width: 1099px;
+  height: 600px;
+  overflow: hidden;
     display: flex;
   align-items: center;
 }
@@ -89,12 +112,31 @@ body {
 .card {
   background: rgb(11, 11, 11, 1);
   padding: 20px;
-  margin-top: 20px;
+  
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-height: 700px;
+  
+                height: 600px;
+              width: 1099px;
+  background-image: url("img/Backing.png");
 }
+
+
+/* Add a card effect for articles */
+.cardmain {
+  background: rgb(11, 11, 11, 1);
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+                height: 600px;
+              width: 1099px;
+  background-image: url("img/Backing.png");
+}
+
 
 a {
   color: aquamarine;
