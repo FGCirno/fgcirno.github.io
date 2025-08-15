@@ -1,110 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" style="display: flex; box-sizing: border-box; position: absolute; justify-content: center; justify-items: center; align-items: center;">
-<style>.strokeme {
-  color: white;
-  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
-}</style>
-<style>#corners {
-  border-radius: 15px 15px 15px 15px;
-  background: black;
-}</style>
-<style>.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-</style>
-<style>.scale {
-  transform: scale(0.42); 
-}
-</style>
-<!-- <style>.glow-button:hover {
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
--webkit-box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
--moz-box-shadow:    inset 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
-box-shadow:         inset 0px 0px 500px 0px rgba(0, 0, 0, 0.3);
-}</style> -->
-<script>
-class MyATag extends HTMLElement {
-  constructor() {
-    super()
-  }
-  connectedCallback() {
-    const a = document.createElement('a')
-    for (const attr of this.attributes) {
-      a.setAttribute(attr.name, attr.value)
-    }
-    console.log(this.children)
-    for (const children of this.children) {
-      this.append(children)
-    }
-    this.replaceWith(a)
-  }
-}
-customElements.define('my-a', MyATag)
-</script>
-
-
-    <head>
-          <style>
-        body {
-            opacity: 0;
-            animation: fadeIn 3s forwards;
+<html lang="en" style="min-height: 100vh">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .header, #corners {
+        opacity: 0;
+        animation: fadeIn 1.5s forwards 0.5s;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
         }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
+      }
     </style>
-        <meta charset="UTF-8">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Starfall Gallery</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> 
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"> 
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starfall Gallery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
 
-    <body style="background-color: #111313; overflow: hidden; height: 100%; box-sizing: inherit;"> 
-        <div class="strokeme" style="color: orange;  text-align: center; font-family: 'Courier New', Courier, monospace; font-size: larger; padding: 1%; margin-left: 70%;">
-                🏳️‍🌈 starfall.gallery 🏳️‍⚧️
+  <body
+    style="
+      background-color: #111313;
+      overflow: hidden;
+      min-height: 100vh;
+      box-sizing: inherit;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div class="bg"></div>
+    <div class="header" style="color: orange">
+      🏳️‍🌈starfall.gallery🏳️‍⚧️
+      <p class="subheader" style="color: white">
+        i can't see the messages, they don't come to me. i don't hear the solitary don't forget me.
+      </p>
+    </div>
+    <main
+      id="corners"
+    >
+      <div
+        id="index-container"
+      >
+        <div id="buttons">
+          <a
+            href='https://www.youtube.com/@StarfallGallery'
+            target="_blank"
+            rel="noreferrer"
+            class="buttons glow-button"
+          >
+            📽️YouTube
+          </a>
+          <a
+            href='https://bsky.app/profile/minerva.bell.moe'
+            target="_blank"
+            rel="noreferrer"
+            class="buttons glow-button"
+          >
+            🦋BlueSky
+          </a>
+          <a
+            href='https://www.backloggd.com/u/MinervaFFXIV/'
+            target="_blank"
+            rel="noreferrer"
+            class="buttons glow-button"
+          >
+            🎮Backloggd
+          </a>
+          <a
+            href='https://www.anilist.co/user/Minerva/animelist'
+            target="_blank"
+            rel="noreferrer"
+            class="buttons glow-button"
+          >
+            🎞️Anilist
+          </a>
+          <a
+            href='https://www.patreon.com/starfallgallery'
+            target="_blank"
+            rel="noreferrer"
+            class="buttons glow-button"
+          >
+            🐖Patreon
+          </a>
+          <a
+            href='https://www.starfall.gallery/blog'
+            class="buttons glow-button"
+          >
+            📝Journal
+          </a>
+          <a
+            href='https://www.starfall.gallery/commissions'
+            class="buttons glow-button"
+          >
+            🎨Fanart
+          </a>
         </div>
-            <main id="corners" style="color: white; max-width: 1200px; width: 1100px; height: 600px; font-family: 'Courier New', Courier, monospace; margin-left: 35%; box-sizing: inherit; text-align: center; align-self: center;  background-image: url('img/Backing.png'); background-color: rgba(0, 0, 0, 0.3);"  >
-                <br class="noselect">Welcome to my Website <br class="noselect">
-                <br class="noselect">Whether you found this website from my YouTube videos, from meeting me in Final Fantasy XIV,
-                <br class="noselect">from my Ring Racers Server or any other way, let me welcome you. I hope you enjoy your visit! <br class="noselect">
-                <br class="noselect">In the meantime, here are some links:<br class="noselect"><br class="noselect">
-                <!--Links to different places from index page.-->
-                <!--<my-a href="https://www.fflogs.com/character/id/20035866">                                                   <img src="img/FFLogs.png" alt="FFLogs" style="image-rendering: pixelated;"></my-a>   -->
-                  
-                  <a href="https://www.youtube.com/@StarfallGallery" class="button glow-button" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" target="_blank" rel="noopener noreferrer">                  <img src="img/YouTube.png" alt="YouTube" style="image-rendering: pixelated;"></a>  
-                  <a href="https://bsky.app/profile/minerva.bell.moe" class="button glow-button" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" target="_blank" rel="noopener noreferrer">                 <img src="img/BlueSky.png" alt="Bsky" style="image-rendering: pixelated;"></a>
-                  <a href="https://twitch.tv/baka_supreme"  class="button glow-button" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" target="_blank" rel="noopener noreferrer">                           <img src="img/Twitch.png" alt="Twitch" style="image-rendering: pixelated;"></a> 
-                  <a href="https://tomestone.gg/character/13449450/minerva-tenri" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button" target="_blank" rel="noopener noreferrer">     <img src="img/Tomestone.png" alt="Tomestone" style="image-rendering: pixelated;"></a><br class="noselect">
-                  <a href="https://backloggd.com/u/starfallgallery/" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button" target="_blank" rel="noopener noreferrer">                  <img src="img/Backloggd.png" alt="Backloggd" style="image-rendering: pixelated;"></a>   
-                  <a href="https://anilist.co/user/Minerva/animelist " style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button" target="_blank" rel="noopener noreferrer">                <img src="img/Anilist.png" alt="Anilist" style="image-rendering: pixelated;"></a>
-                  <a href="https://starfall.gallery/blog" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button">                                                                       <img src="img/Blog.png" alt="Blog" style="image-rendering: pixelated;"></a>
-                  <a href="https://www.fflogs.com/character/id/20035866" class="button glow-button" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" target="_blank" rel="noopener noreferrer">              <img src="img/FFLogs.png" alt="FFLogs" style="image-rendering: pixelated;"></a>  <br class="noselect">              
-                  <a href="https://starfall.gallery/favorites" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button">                                                                  <img src="img/Favorites.png" alt="Favorites" style="image-rendering: pixelated;"></a> 
-                  <a href="https://starfall.gallery/art" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button" >                                                                       <img src="img/Artwork.png" alt="My Art" style="image-rendering: pixelated;"></a> 
-                  <a href="https://starfall.gallery/commissions" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button">                                                                <img src="img/Commissions.png" alt="Stuff I've Had Commisioned" style="image-rendering: pixelated;"></a>
-                  <a href="https://starfall.gallery/guest-book" style="padding-top: 45px; padding-left: 5px; padding-right: 5px;" class="button glow-button">                                                                 <img src="img/GuestBook.png" alt="Guest Book" style="image-rendering: pixelated;"></a><br class="noselect"> <br class="noselect">
-                <!--Banner Below HTML Links. Planning to add an Array at some point.-->
-                  <img src="img/Banner 01.png" style="padding-right: 1px; height: 228px; width: 553px;">
-              
-              <br class="noselect"><p style="margin:10px;">Also, I'm minerva on Discord.</p>
-              <div class="stokeme" style="color: grey; margin:20px;">This website is a work in progress, thanks for understanding.</div>
-            </main>
-</body>
+        <!--Banner Below HTML Links. Planning to add an Array at some point.-->
+        <div id="banner">
+          <img src="img/Banner 01.png" draggable="false" alt="banner" />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
-
 
 <!-- 
 Plans for Website:
