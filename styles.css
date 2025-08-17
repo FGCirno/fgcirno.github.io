@@ -16,6 +16,12 @@
   position: sticky;
 }
 
+
+.focus {
+ pointer-events: none;
+}
+
+
 .content {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
@@ -99,43 +105,30 @@ body {
 .leftcolumn {
   margin: auto;
   border-radius: 15px 15px 15px 15px;
-  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
     2px 2px 0 #000000;
   width: 1099px;
   height: 600px;
   overflow: hidden;
-    display: flex;
+  display: flex;
   align-items: center;
+
 }
 
 /* Add a card effect for articles */
 .card {
   background: rgb(11, 11, 11, 1);
   padding: 20px;
-  
   align-items: center;
   display: flex;
   flex-direction: column;
-  
-                height: 600px;
-              width: 1099px;
-  background-image: url("img/Backing.png");
+  height: 600px;
+  width: 1099px;
+  background-image: url("img/Blog Backing.png");
 }
 
 
-/* Add a card effect for articles */
-.cardmain {
-  background: rgb(11, 11, 11, 1);
-  padding: 20px;
-  justify-content: space-evenly;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  
-                height: 600px;
-              width: 1099px;
-  background-image: url("img/Backing.png");
-}
+
 
 
 a {
@@ -193,6 +186,20 @@ a {
   gap: 32px 64px;
 }
 
+
+/* Add a card effect for articles */
+.cardmain {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 1099px;
+  padding: 0 64px;
+  gap: 32px 64px;
+  background-image: url("img/Blog Backing.png");
+}
+
+
+
 #buttons {
   width: 50%;
   display: flex;
@@ -242,4 +249,22 @@ a {
   #buttons {
     width: 100%;
   }
+}
+
+
+.left{
+  margin-left: auto;
+  float: left;
+  display: block;
+
+    
+}
+
+.right{
+  margin-right: auto;
+  margin-bottom: -295px;
+  float: right;
+  display: block;
+
+
 }
