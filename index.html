@@ -3,7 +3,8 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .header, #corners {
+      .header,
+      #corners {
         opacity: 0;
         animation: fadeIn 1.5s forwards 0.5s;
       }
@@ -53,19 +54,15 @@
     <div class="bg"></div>
     <div class="header" style="color: orange">
       🏳️‍🌈starfall.gallery🏳️‍⚧️
-            <p class="subheader" style="color: white">
+      <p class="subheader" style="color: white">
         so unsure, before it's even heard
       </p>
     </div>
-    <main
-      id="corners"
-    >
-      <div
-        id="index-container"
-      >
+    <main id="corners">
+      <div id="index-container">
         <div id="buttons">
           <a
-            href='https://www.youtube.com/@StarfallGallery'
+            href="https://www.youtube.com/@StarfallGallery"
             target="_blank"
             rel="noreferrer"
             class="buttons glow-button"
@@ -73,7 +70,7 @@
             📽️YouTube
           </a>
           <a
-            href='https://bsky.app/profile/minerva.bell.moe'
+            href="https://bsky.app/profile/minerva.bell.moe"
             target="_blank"
             rel="noreferrer"
             class="buttons glow-button"
@@ -81,7 +78,7 @@
             🦋BlueSky
           </a>
           <a
-            href='https://www.backloggd.com/u/MinervaFFXIV/'
+            href="https://www.backloggd.com/u/MinervaFFXIV/"
             target="_blank"
             rel="noreferrer"
             class="buttons glow-button"
@@ -89,7 +86,7 @@
             🎮Backloggd
           </a>
           <a
-            href='https://www.anilist.co/user/Minerva/animelist'
+            href="https://www.anilist.co/user/Minerva/animelist"
             target="_blank"
             rel="noreferrer"
             class="buttons glow-button"
@@ -97,7 +94,7 @@
             🎞️Anilist
           </a>
           <a
-            href='https://www.patreon.com/starfallgallery'
+            href="https://www.patreon.com/starfallgallery"
             target="_blank"
             rel="noreferrer"
             class="buttons glow-button"
@@ -105,13 +102,13 @@
             🐖Patreon
           </a>
           <a
-            href='https://www.starfall.gallery/blog'
+            href="https://www.starfall.gallery/blog"
             class="buttons glow-button"
           >
             📝Journal
           </a>
           <a
-            href='https://www.starfall.gallery/commissions'
+            href="https://www.starfall.gallery/commissions"
             class="buttons glow-button"
           >
             🎨Fanart
@@ -119,7 +116,14 @@
         </div>
         <!--Banner Below HTML Links. Planning to add an Array at some point.-->
         <div id="banner">
-          <img src="img/Banner 01.png" draggable="false" alt="banner" title="click me for the full image!" />
+          <img
+            src="img/Banner 01.png"
+            draggable="false"
+            alt="banner"
+            title="It's Minerva Tenri from the hit MMORPG Final Fantasy XIV (click for full image)"
+            onclick="window.open(starfall.gallery/img/bannerfull.png)"
+            class="cursor"
+          />
         </div>
       </div>
     </main>
