@@ -16,6 +16,10 @@
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="minerva palazzo tenri starfall.gallery baka_supreme fgcirno"
+    />
     <title>Starfall Gallery</title>
     <link
       rel="icon"
@@ -51,12 +55,23 @@
       align-items: center;
     "
   >
+    <script>
+      const birdText = [
+        "so unsure, before it's even heard",
+        "i can't tell the border with my eyes so blurred",
+        "this bird, expert in the absurd",
+        "ten time unwitting champion of being spurred",
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const text = birdText[Math.floor(Math.random() * birdText.length)]
+        document.querySelector("#birds").textContent = text;
+      });
+    </script>
     <div class="bg"></div>
     <div class="header" style="color: orange">
       🏳️‍🌈starfall.gallery🏳️‍⚧️
-      <p class="subheader" style="color: white">
-        so unsure, before it's even heard
-      </p>
+      <p id="birds" class="subheader" style="color: white"></p>
     </div>
     <main id="corners">
       <div id="index-container">
@@ -134,14 +149,14 @@
 Plans for Website:
 - Add an array to the banner, add more gposes or hedgehog photos.
 - Allow user to view full image when clicking on banner.
-- Add a message box, as well as start the side pages (Blog, Artwork, Commissions, My Likes).
+- Add a message box (input field with js), as well as start the side pages (Blog, Artwork, Commissions, My Likes).
 - Reword introductory text on index. Talk more about myself, pronouns and so on.
 - Add cheesy animated gifs to the right and left of the banner.
 - Interactable elements of some sort???
  -->
 
 <script>
- function myFunction() {
-  window.open("../img/bannerfull.png");
- }
- </script>
+  function myFunction() {
+    window.open("../img/bannerfull.png");
+  }
+</script>
