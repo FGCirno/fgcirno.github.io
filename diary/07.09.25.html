@@ -2,6 +2,7 @@
 <html lang="en" style="min-height: 100vh">
   <head>
     <link rel="stylesheet" href="../styles.css" />
+
     <style>
       .bunk, .focus{
         opacity: 0;
@@ -13,6 +14,7 @@
         }
       }
     </style>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starfall Blog</title>
@@ -40,41 +42,37 @@
   <body
     style="
       background-color: #111313;
-      overflow: hidden;
       min-height: 100vh;
       box-sizing: inherit;
       display: flex;
       flex-direction: column;
-      text-align: center;
       justify-content: center;
       align-items: center;
     "
   >
     <div class="bg"></div>
     <div class="header" style="color: orange">
+      <header style="padding-top: 15%;">
       🏳️‍🌈starfall.blog🏳️‍⚧️
       <p class="subheader" style="color: white">
         an isolated alley of the mind
       </p>
+      </header>
     </div>
 
     <div style="color: white">
       <div class="leftcolumn">
         <main>
           <div
-            class="card"
+            class="panel"
             id="navbar"
-            style="
-              overflow-x: hidden;
-              scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);
-            "
-          >
-          <img class="focus" src="../img/Backing Focus.png" style="position: absolute; margin-top: -20px;" draggable="false;">
+            style="scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);">
 
+              <!-- DIARY ENTRIES GO DOWN HERE -->
 
-            <div class="bunk" style="width: 90%;">
-              <p style="font-size: 18px; color: orange;"><u>07/09/2025:</u></p>
-              <p>
+              <div class="bunk">
+                <h2 style="font-size: 18px; color: orange;"><u>Getting Worse</u></h2>
+<p>
                 I've always had severe allergies. The air quality would be just
                 bad enough, I'd have just the right amount of dust in the room
                 and that'd leave me sneezing for 12hrs straight. Often times
@@ -84,9 +82,11 @@
                 completely floored. I tried to sleep it off, but I only woke up
                 to the sneezing being worse and completely drained of energy. It
                 feels completely awful. I'm doing better now, but my nose is
-                still stark red with exhaustion and crusty as can be.<br
-                  class="noselect"
-                /><br class="noselect" />Speaking of things in my life getting
+                still stark red with exhaustion and crusty as can be.
+                </p>
+                <h2 style="font-size: 18px; color: orange;"><u>Getting Better</u></h2>
+                <p>
+                Speaking of things in my life getting
                 better, this past month I've picked vocal training back up. I'm surprised
                 that I've retained some of the pitch control I had from my past
                 vocal training from a few years ago before I stopped. 
@@ -94,7 +94,7 @@
                 gotten some amount of resonance control and I'm quite happy with
                 my results so far. I simply need to apply my fem voice anywhere
                 I can in every day life, and I'll eventually have a voice I can
-                be fully proud of.<br class="noselect" /><br class="noselect" />
+                be fully proud of.</p><p>
                 Might be silly to admit, but I'm looking to Bridget's dub voice
                 from Guilty Gear Strive and Amy Rose from the early 2000s Sonic
                 games as a sort of vocal inspiration. I want that sort of peppy
@@ -104,11 +104,15 @@
                 the past few days) but I really just need to make myself do it,
                 even if I'm timid about being heard.
               </p>
+              </div>
+
+                <!-- DIARY ENTRIES GO UP HERE -->
+
             </div>
           </div>
         </main>
       </div>
-      <div><a href="https://starfall.gallery/blog">last page </a></div>
+      <div  style="padding-bottom: 3%;"><a href="https://starfall.gallery/blog">last page </a></div>
     </div>
 
     <script>
