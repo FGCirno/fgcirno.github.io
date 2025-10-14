@@ -1,217 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-      <link rel="stylesheet" href="styles.css" />
-      <style>
-        body {
-          opacity: 0;
-          animation: fadeIn 1.5s forwards;
-        }
-        @keyframes fadeIn {
-          to {
-            opacity: 1;
-          }
-        }
-      </style>
+<!-- 
+  Created by Claude
 
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-      name="keywords"
-      content="minerva palazzo tenri starfall.gallery baka_supreme fgcirno"
-    />
-      <title>Starfall Commissions</title>
-      <meta name="description" content="My growing collection of commissions" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="img/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="96x96"
-        href="img/favicon-96x96.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="img/favicon-16x16.png"
-      />
-          <link rel="manifest" href="/manifest.json" />
+  TL;DR: CTRL+F/CMD+F to find every instance of the below:
+    EDIT ME! 
+  This will bring you to all the areas you can/should edit.
+  All image files you want to use, put in the folder titled images. You can delete the images this comes with (in fact, you should.) For your ease, do not put your images in sub folders: just throw them all in the images folder.
+  
+  If you're hosting on neocities or another limited space/bandwidth, I recommend you resize your images for web. Yes they may be crunchy but this isn't twitter: no 5 or 8 or 10MB file sizes here.
+
+  This information is also in the README file-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="StarfallGallery"> <!-- EDIT ME! change "Your Name" to your name/username/author name for SEO purposes-->
+  <meta name="description" content="Starfall Gallery's Commissions Page"> <!-- EDIT ME! only write within the quotations where it says "Describe...purposes!"-->
+
+  <!--stylesheet-->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--FONT FILES FOR ICON DO NOT TOUCH-->
+  <link href="assets/brands.css" rel="stylesheet">
+  <link href="assets/fontawesome.min.css" rel="stylesheet">
+
+<!-- EDIT ME! Change "My Site" below to whatever you're site is!-->
+  <title>Starfall Commissions</title> 
+<!-- EDIT ME! PUT THE LINK TO THE ICON THAT WILL SHOW UP IN YOUR BROWSER TAB BELOW -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="manifest" href="/manifest.json" />
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://starfall.gallery/commissions" />
+    <meta property="og:url" content="https://starfall.gallery/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Starfall Gallery" />
-    <meta property="og:description" content="My growing collection of commissions" />
+    <meta property="og:description" content="Minerva's little collection of forlorn stars. Grab a cup of coffee, and come stare at the night sky." />
     <meta property="og:image" content="https://starfall.gallery/img/imgprv.png" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="starfall.gallery" />
-    <meta property="twitter:url" content="https://starfall.gallery/commissions" /> 
+    <meta property="twitter:url" content="https://starfall.gallery/" />
     <meta name="twitter:title" content="Starfall Gallery" />
     <meta name="twitter:description" content="Twitter sucks. Stop sharing my website there." />
     <meta name="twitter:image" content="https://starfall.gallery/img/imgprv.png" />
-      <link rel="manifest" href="/manifest.json" />
-    </head>
-<body>
-  <div class="bgco"></div>
-  <div class="header" style="color: orange; background-color: rgba(19, 19, 19, 0.7); padding: .5%; max-width: 30%; max-height: 10%px; margin-left: 35%; margin-top: 10px; margin-bottom: 10px; border-radius: 15px 15px 15px 15px;">🏳️‍🌈 starfall.commissions 🏳️‍⚧️
-  <p style="color: white; font-size: 16px; text-align: center; padding-bottom: .1%;">Here is all of the art I've had commissioned :> <br>(click the images to full screen)</p></div>
-  <div class="row" style="color: white">
-    <div>
-      <main>
-        <div
-          class="gallery"
-          id="navbar"
-          style="
-            overflow-y: scroll;
-            overflow-x: hidden;
-            scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);
-          "
-        >
-      <div class="gallery-item">
-        <img src="./img/commissions/chou.png" alt="Commission of Minerva as a Dragoon in Amaurot by chougokuoozaru.bsky.social on Bluesky">
-        <div class="caption">Commission of Minerva as a Dragoon <br class="noselect">in Amaurot by <a href="https://bsky.app/profile/chougokuoozaru.bsky.social">Chou on Bluesky</a></div>
-      </div>
+</head>
 
-      <div class="gallery-item">
-        <img src="./img/commissions/crybun.jpg" alt="Commission of Minerva and Raz holding hands by elma0062.bsky.social on Bluesky">
-        <div class="caption">Commission of Minerva and Raz <br class="noselect">holding hands by <a href="elma0062.bsky.social">Elma on Bluesky</a> </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/froglet.png" alt="Commission of Minerva doing a peace by frogletcomics.bsky.social on Bluesky">
-        <div class="caption">Commission of Minerva doing a peace by <a href="https://bsky.app/profile/frogletcomics.bsky.social">Frogletcomics on Bluesky</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/hiroita.png" alt="Commission of Minerva in a pixel style drinking coffee by hiroita11.bsky.social on Bluesky">
-        <div class="caption">Commission of Minerva in a pixel <br class="noselect"> style drinking coffee by <a href="https://bsky.app/profile/hiroita11.bsky.social">hiroita</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/meu.png" alt="Commission of Minerva looking super cute by 13521meu on X">
-        <div class="caption">Commission of Minerva looking super cute by <a href="https://x.com/13521meu">meu on X</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/oscar_get.png" alt="A chibi collage of Minerva showing lots of emotion by Oscar Get on X">
-        <div class="caption">A chibi collage of Minerva showing <br class="noselect"> lots of emotion by <a href="https://x.com/oscar_get">Oscar Get on X</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/oscar_get2.png" alt="A chibi collage of Bell the Weavile looking rad as heck by Oscar Get on X">
-        <div class="caption">A chibi collage of Bell the Weavile looking rad as heck by <a href="https://x.com/oscar_get">Oscar Get on X</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/osulan.png" alt="Commission of Minerva looking very confident by osulan.bsky.social on Bluesky">
-        <div class="caption">Commission of Minerva looking very <br class="noselect"> confident by <a href="https://bsky.app/profile/osulan.bsky.social">Osulan on Bluesky</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/palastel.png" alt="Adorable commission of Minerva by palastel.bsky.social on Bluesky">
-        <div class="caption">Adorable commission of Minerva by <br class="noselect"><a href="https://bsky.app/profile/palastel.bsky.social">Palastel on Bluesky</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/samlizzy71.jpg" alt="An awfully genderfully cute commission of Minerva by samlizzy71.bsky.social on Bluesky">
-        <div class="caption">An awfully genderfully cute commission of Minerva by <a href="https://bsky.app/profile/samlizzy71.bsky.social">Sam Lizzy</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/sutabuns.png" alt="A valentines commission of Minerva & her girlfriend Marisa by Sutabuns">
-        <div class="caption">A valentines commission of Minerva & her girlfriend Marisa by Sutabuns</div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/wubbwarg.png" alt="A commission of Minerva straight out of Klasky Csupo by wubbwarg.bsky.social on Bluesky">
-        <div class="caption">A commission of Minerva straight out of Klasky Csupo by <a href="https://bsky.app/profile/wubbwarg.bsky.social">Wubbwarg</a></div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="./img/commissions/znassysam.png" alt="A rad looking commission of a badass Minerva doing a peace sign by znassy">
-        <div class="caption">A rad looking commission of a badass Minerva doing a peace sign by znassy</div></div>
-
-        <div class="gallery-item">
-        <img src="./img/commissions/DoghouseCorgian.jpg" alt="A wonderful little sketch commission of Minerva by DoghouseCorgian">
-        <div class="caption">A wonderful little sketch commission of Minerva by DoghouseCorgian</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
 
-      </div>
-    </div>
-    </main>
+main {
+    padding: 4rem;
+    min-height: 85vh; /* EDIT ME if and ONLY if you don't have a lot in your about me -- you may need to up this to 90vh */
+}
 
-    </div>
-          <a href="https://starfall.gallery" 
-        ><p style="padding-top: 0.1%; text-align: center;">go back</p></a
-      >
-      <footer style="text-align: center; padding-bottom: 1%; color: white;">
-        
-  </div>
+#gallery{
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
 
-  <div id="img-modal" class="img-modal" style="display:none;">
-    <span class="img-modal-close" id="img-modal-close">&times;</span>
-    <img class="img-modal-content" id="img-modal-img" src="" alt="">
-    <div class="img-modal-caption" id="img-modal-caption"></div>
-  </div>
+#gallery p, #gallery h3, #gallery h2 {
+    margin: 1.25rem auto;
+}
 
-  <script>
-  // Gather all images and captions
-  const galleryImages = Array.from(document.querySelectorAll('.gallery-item img'));
-  let currentIndex = -1;
 
-  // Open modal on image click
-  galleryImages.forEach((img, idx) => {
-    img.addEventListener('click', function() {
-      currentIndex = idx;
-      showModal(currentIndex);
-    });
-  });
 
-  function showModal(idx) {
-    document.getElementById('img-modal').style.display = 'flex';
-    document.getElementById('img-modal-img').src = galleryImages[idx].src;
-    document.getElementById('img-modal-caption').textContent = galleryImages[idx].alt;
-  }
+#featureimg {
+    max-width: 500px;
+    max-height: 500px;
+}
 
-  // Close modal on X click or background click
-  document.getElementById('img-modal-close').onclick = function() {
-    closeModal();
-  };
-  document.getElementById('img-modal').onclick = function(e) {
-    if (e.target === this) {
-      closeModal();
+/* changing the WIDTH and HEIGHT in the below will change how big your galelry item thumbnails appear. NOTE - due to styling, the 120 width has minus 10 pixels on either side due to margin; same to height.*/
+#galleryItems img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 10px;
+    border: 2px #0000008e solid; /* EDIT ME - color of the border around each gallery image */
+}
+
+footer {
+    width: 100%;
+    background-color: #272727; /* EDIT ME! - background color of the footer (aka where your About Me and social links are!) */
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    color: lightgray; /* EDIT ME! - font color of the text within the footer */
+}
+
+
+
+
+
+/* For large horizontal viewports, to reign in that gallery... */
+
+@media screen and (min-width: 768px) 
+{
+    #gallery {
+        max-width: 75vw;
     }
-  };
 
-  function closeModal() {
-    document.getElementById('img-modal').style.display = 'none';
-    document.getElementById('img-modal-img').src = '';
-    currentIndex = -1;
-  }
+    #gallery p {
+        max-width: 60%;
+    }
 
-  // Arrow key navigation
-  document.addEventListener('keydown', function(e) {
-    const modal = document.getElementById('img-modal');
-    if (modal.style.display === 'flex' && currentIndex !== -1) {
-      if (e.key === 'ArrowRight') {
-        // Next image
-        currentIndex = (currentIndex + 1) % galleryImages.length;
-        showModal(currentIndex);
-      } else if (e.key === 'ArrowLeft') {
-        // Previous image
-        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-        showModal(currentIndex);
-      } else if (e.key === 'Escape') {
-        closeModal();
+    footer section {
+       max-width: 75vw;
+       margin: 0 auto;
+    }
+}
+      .header,
+      #corners2 {
+        opacity: 0;
+        animation: fadeIn 1.5s forwards 0.5s;
       }
-    }
-  });
-</script>
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+</style>
+
+
+
+<body class="bg" style="background-color:  #111313; ">
+  <main id="corners2">
+        <div class="header" style="color: orange; " >
+      <header>
+      🏳️‍🌈starfall.blog🏳️‍⚧️
+      <p class="subheader" style="color: white;">
+        This is all of art I've commissioned. Click an image to enhance and show credits.
+      </p>
+      </header>
+    </div>
+    <div id="gallery">
+        <div id="index-container-2" class="leftcolumn" style="background-color:  #111313;">
+        <div id="galleryItems">
+
+            <!-- ADD IMAGES HERE YOU WILL ADD ALL IMAGES BETWEEN THIS COMMENT LINE AND THE CAP COMMENT LINE-->
+            <!-- EDIT ME! ALL IMAGES MUST BE STORED IN THE FOLDER LABELED IMAGES
+            You will type the RELATIVE PATH to each image you want to put in your gallery. This means that after every src= in the "" you will type images/your-image-name-here.filetype
+            
+            What you type must match the image you've uploaded into your images folder. You will need the images/ in the quotes: e.g. src="images/myimage.png"
+
+            Then you should type a title for your image in the "" following title= e.g. title="My Image"
+
+            If you want a description, type it in the "" following data-desc, OTHERWISE MAKE SURE YOU HAVE "" in the data-desc e.g. data-desc="This is a PNG of my image! This description will show up when you click me!"
+
+            If you're good about accessibility, you should add alt="alternative text". I have included this on the first few image examples.
+
+            IF YOU WANT TO SECTION OFF YOUR GALLERIES with a little heading, then inbetween the image of the LAST grouping and the image of hte FIRST grouping, write <h2>Whatever You're Calling This Area</h2>. It has already been styled for you.
+            -->
+
+        <img src="./img/commissions/chou.png" title="Minerva" data-desc="@chougokuoozaru.bsky.social on Bluesky" class="clickablepic" alt="Commission of Minerva as a Dragoon in Amaurot by chougokuoozaru.bsky.social on Bluesky">
+
+        <img src="./img/commissions/crybun.jpg" title="Minerva & Raz" data-desc="@elma0062.bsky.social on Bluesky" class="clickablepic" alt="Commission of Minerva and Raz holding hands by elma0062.bsky.social on Bluesky">
+
+        <img src="./img/commissions/froglet.png" title="Minerva" data-desc="@frogletcomics.bsky.social on Bluesky" class="clickablepic" alt="Commission of Minerva doing a peace by frogletcomics.bsky.social on Bluesky">
+
+        <img src="./img/commissions/hiroita.png" title="Minerva" data-desc="@hiroita11.bsky.social on Bluesky" class="clickablepic" alt="Commission of Minerva in a pixel style drinking coffee by hiroita11.bsky.social on Bluesky">
+
+        <img src="./img/commissions/meu.png" title="Minerva" data-desc="@13521meu on X" class="clickablepic" alt="Commission of Minerva looking super cute by 13521meu on X">
+
+        <img src="./img/commissions/oscar_get.png" title="Minerva" data-desc="@Oscar Get on X"  class="clickablepic" alt="A chibi collage of Minerva showing lots of emotion by Oscar Get on X">
+
+        <img src="./img/commissions/oscar_get2.png" title="Bell the Weavile" data-desc="@Oscar Get on X" class="clickablepic" alt="A chibi collage of Bell the Weavile looking rad as heck by Oscar Get on X">
+
+        <img src="./img/commissions/osulan.png" title="Minerva" data-desc="@osulan.bsky.social on Bluesky" class="clickablepic" alt="Commission of Minerva looking very confident by osulan.bsky.social on Bluesky">
+
+        <img src="./img/commissions/palastel.png" title="Minerva" data-desc="@palastel.bsky.social on Bluesky" class="clickablepic" alt="Adorable commission of Minerva by palastel.bsky.social on Bluesky">
+
+        <img src="./img/commissions/samlizzy71.jpg" title="Minerva" data-desc="@samlizzy71.bsky.social on Bluesky" class="clickablepic" alt="An awfully genderfully cute commission of Minerva by samlizzy71.bsky.social on Bluesky">
+
+        <img src="./img/commissions/sutabuns.png" title="Minerva & Marisa" data-desc="@Sutabuns" class="clickablepic" alt="A valentines commission of Minerva & her girlfriend Marisa by Sutabuns">
+
+        <img src="./img/commissions/wubbwarg.png" title="Minerva" data-desc="@wubbwarg.bsky.social on Bluesky" class="clickablepic" alt="A commission of Minerva straight out of Klasky Csupo by wubbwarg.bsky.social on Bluesky">
+
+        <img src="./img/commissions/znassysam.png" title="Minerva" data-desc="@znassy" class="clickablepic" alt="A rad looking commission of a badass Minerva doing a peace sign by znassy">
+
+        <img src="./img/commissions/DoghouseCorgian.jpg" title="Minerva" data-desc="@DoghouseCorgian" class="clickablepic" alt="A wonderful little sketch commission of Minerva by DoghouseCorgian">
+           
+        
+<!-- DON'T ADD ANY IMAGES BEYOND THIS LINE!!!!--->   
+        </div> <!--end small galleryItems image listing-->
+        <noscript>This site requires JavaScript to work properly. Please enable JavaScript or the gallery will not load.</noscript>
+                <div id="hideshow" style="padding: 5%;"> <!--everything within this div is hidden by default: we use javascript to show it-->
+            <img id="featureimg" src="./img/blank.gif"> <!--do not modify the GIF in here-->
+            <h3 id="imgtitle" style="text-size-adjust: small;"></h3>
+            <p id="imgdesc" style="max-width: 100%;">Select an image to the left</p>
+        </div> <!-- end #hideshow div-->
+        
+        </div>
+        <p style="float: right; padding-right: 5%;">Simple Image Gallery Template by: <a href="https://marquisdeclaude.neocities.org">marquisdeclaude.neocities.org</a></p>  <p style="float:left; padding-left: 5%;"><a href="index.html">Return to Main Page</a></p> <!-- EDIT ME! -->
+        
+      </div>
+  </main>
+  <script src="script.js"></script> <!-- Don't touch! -->
 </body>
 </html>
