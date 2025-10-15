@@ -11,7 +11,7 @@
 
   This information is also in the README file-->
 
-<html lang="en">
+<html lang="en" style="min-height: 100vh;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,8 +78,8 @@ main {
 
 /* changing the WIDTH and HEIGHT in the below will change how big your galelry item thumbnails appear. NOTE - due to styling, the 120 width has minus 10 pixels on either side due to margin; same to height.*/
 #galleryItems img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     cursor: pointer;
     margin: 10px;
@@ -100,21 +100,6 @@ footer {
 
 /* For large horizontal viewports, to reign in that gallery... */
 
-@media screen and (min-width: 768px) 
-{
-    #gallery {
-        max-width: 75vw;
-    }
-
-    #gallery p {
-        max-width: 60%;
-    }
-
-    footer section {
-       max-width: 75vw;
-       margin: 0 auto;
-    }
-}
       .header,
       #corners2 {
         opacity: 0;
@@ -129,8 +114,8 @@ footer {
 
 
 
-<body class="bg" style="background-color:  #111313; ">
-  <main id="corners2">
+<body class="bg" style="overflow-y: scroll;">
+  <main id="corners2" >
         <div class="header" style="color: orange; " >
       <header>
       🏳️‍🌈starfall.blog🏳️‍⚧️
@@ -139,9 +124,10 @@ footer {
       </p>
       </header>
     </div>
+
     <div id="gallery">
-        <div id="index-container-2" class="leftcolumn" style="background-color:  #111313;">
-        <div id="galleryItems">
+        <div id="index-container-2" class="leftcolumn">
+            <div id="galleryItems">
 
             <!-- ADD IMAGES HERE YOU WILL ADD ALL IMAGES BETWEEN THIS COMMENT LINE AND THE CAP COMMENT LINE-->
             <!-- EDIT ME! ALL IMAGES MUST BE STORED IN THE FOLDER LABELED IMAGES
@@ -193,11 +179,11 @@ footer {
                 <div id="hideshow" style="padding: 5%;"> <!--everything within this div is hidden by default: we use javascript to show it-->
             <img id="featureimg" src="./img/blank.gif"> <!--do not modify the GIF in here-->
             <h3 id="imgtitle" style="text-size-adjust: small;"></h3>
-            <p id="imgdesc" style="max-width: 100%;">Select an image to the left</p>
+            <p id="imgdesc" style="max-width: 100%;">Please select an image!</p>
         </div> <!-- end #hideshow div-->
         
         </div>
-        <p style="float: right; padding-right: 5%;">Simple Image Gallery Template by: <a href="https://marquisdeclaude.neocities.org">marquisdeclaude.neocities.org</a></p>  <p style="float:left; padding-left: 5%;"><a href="index.html">Return to Main Page</a></p> <!-- EDIT ME! -->
+        <p style="float: right; padding-right: 20%;">Simple Image Gallery Template by: <a href="https://marquisdeclaude.neocities.org">marquisdeclaude.neocities.org</a></p>  <p style="float:left; padding-left: 20%;"><a href="index.html">Return to Main Page</a></p> <!-- EDIT ME! -->
         
       </div>
   </main>

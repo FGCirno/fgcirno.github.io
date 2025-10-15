@@ -105,11 +105,14 @@ body {
   border-radius: 15px 15px 15px 15px;
 /*   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
     2px 2px 0 #000000; */
-  width: 1099px;
+  max-width: 1099px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   outline: 2px dotted rgb(136, 136, 136);
   align-items: center;
+  background-color:  #111313;
 }
 
 /* Add a card effect for articles */
@@ -182,12 +185,37 @@ a {
 #index-container-2 {
   display: flex;
   align-items: center;
-  width: 1450px;
-  height: 650px;
+  max-width: 1250px;
+  width: min(var(--content-max), 92vw);
+  height: 100%;
   padding: 0 64px;
   gap: 32px 64px;
+    transform: none;
+  box-shadow: none;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  
 }
 
+.panel {
+  width: min(var(--content-max), 92vw);
+  margin: 0 auto;
+  background: transparent;
+  padding-top: calc(var(--navh) + var(--jukeh) + 36px);
+  padding-bottom: 80px;
+  background-color: rgb(26, 27, 27);
+  opacity: 90%;
+  background-image: none;
+  color: var(--ink);
+  transform: none;
+  box-shadow: none;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 2rem 2.2rem;
+  clip-path: none;
+}
 
 
 /* Add a card effect for articles */
@@ -240,23 +268,6 @@ a {
   z-index: -1;
 }
 
-.bgco {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100%;
-  min-height: 100vh;
-  background-image: url("img/jo.png");
-  opacity: 0.10;
-  animation: WHY 60s linear infinite;
-  animation-fill-mode: forwards;
-  z-index: -1;
-}
-
-
 
 @media (max-width: 800px) {
   #index-container {
@@ -268,10 +279,18 @@ a {
     background: none;
   }
 
+  #index-container-2 {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    
+  }
+
   #buttons {
     width: 100%;
   }
 }
+
+
 
 .left {
   margin-left: auto;
@@ -286,25 +305,7 @@ a {
   display: block;
 }
 
-.panel {
-  width: min(var(--content-max), 92vw);
-  margin: 0 auto;
-  background: transparent;
-  padding-top: calc(var(--navh) + var(--jukeh) + 36px);
-  padding-bottom: 80px;
-  background-color: rgb(26, 27, 27);
-  opacity: 90%;
-  background-image: none;
-  color: var(--ink);
-  transform: none;
-  box-shadow: none;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  
-  padding: 2rem 2.2rem;
-  clip-path: none;
-}
+
 
 
 .blog-image{
@@ -314,17 +315,4 @@ a {
   margin-right: auto;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-  gap: 15px;
-  padding: 32px;
-  width: 90%;
-  margin: auto;
-  justify-items: center;
-  align-items: start;
-  background: rgba(19, 19, 19, 0.7);
-  outline: 2px dotted rgb(136, 136, 136);
-  border-radius: 12px;
-}
 

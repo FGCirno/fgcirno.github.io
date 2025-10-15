@@ -6,7 +6,8 @@ const imgTitle = document.getElementById('imgtitle');
 const imgDesc = document.getElementById('imgdesc');
 const hideShow = document.getElementById('hideshow');
 
-//select nodelist of elements with classes bc all my gallery images will have a class of clickablepic
+//select nodelist of elements with classes 
+// bc all my gallery images will have a class of clickablepic
 
 const clickPic = document.querySelectorAll('.clickablepic'); //creates a nodelist
 
