@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en" style="min-height: 100vh">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starfall Blog</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="img/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-  </head>
 
-  <body
-    style="
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,700" rel="stylesheet">
+  <title>Starfall Blog</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+</head>
+
+<style>
+  .bunk,
+  .focus {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 0.5s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<body style="
       background-color: #111313;
-      overflow: hidden;
       min-height: 100vh;
       box-sizing: inherit;
       display: flex;
       flex-direction: column;
-      text-align: center;
       justify-content: center;
       align-items: center;
-    "
-  >
-    <div class="bg"></div>
-    <div class="header" style="color: orange">
-      🏳️‍🌈starfall.blog🏳️‍⚧️
-      <p class="subheader" style="color: white">
-        an isolated alley of the mind
-      </p>
-    </div>
+    ">
+  <div class="bg"></div>
+  <div class="header" style="color: orange; padding-top: 10px;">
+    🏳️‍🌈starfall.blog🏳️‍⚧️
+    <p class="subheader" style="color: white">
+      Unfiltered and only slightly refined brain spillage.
+    </p>
+  </div>
 
-    <div style="color: white;">
-      <div class="leftcolumn">
-        <main>
-          <div
-            class="cardmain"
-            id="navbar"
-            style="
-              overflow-x: hidden;
-              scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);
-            "
-          >
-            <div id="buttons" style="font-size: 18px;">
-              <p style="font-size: 20px; margin-bottom: -14%;">Diary Entries:</p>
-              <p style="font-size: 14px; color: orange; margin-bottom: -5%;">(content warnings: death, self harm, suicidal thoughts)</p>
-              <a href='diary/08.15.25.html'>NEW! 08/15/2025</a>
-              <a href='diary/07.27.25.html'>07/27/2025</a>
-              <a href='diary/07.09.25.html'>07/09/2025</a>
-              <a href='diary/06.16.25.html'>06/16/2025</a>
-              
+
+  <div style="color: white;">
+    <div class="leftcolumn">
+      <main>
+        <div class="panel"
+          style="min-height: 720px; width: 1100px; scrollbar-color: rgb(15, 15, 15, 1) rgb(30, 30, 30, 1);" id="navbar">
+          <div class="bunk"
+            style="font-size: 18px; width: 100%; text-align: left; font-family: 'Courier New', Courier, monospace;">
+
+<!--             <div class="menuclean">
+              <p>
+                <a href="diary/12.25.25.html" target="_blank">(12/25/2025) - Minerva's 2025 Best Collection</a>
+              </p>
+              <img src="./img/thumbs/best25thumbs.png" class="diarythumb">
+            </div> -->
+
+            <div class="menuclean">
+              <p>
+                <a href="diary/10.19.25.html" target="_blank">(10/19/2025) - Places Lost to Time</a>
+              </p>
+              <img src="./img/thumbs/omorithumb.png" class="diarythumb">
             </div>
-        <!--Banner Below HTML Links. Planning to add an Array at some point.-->
-        <div id="banner">
-          <img src="img/Banner Blog.png" draggable="false" alt="banner" title="click me for the full image!" />
-        </div>
+
+            <div class="menuclean">
+              <p>
+                <a href="diary/08.15.25.html" target="_blank">(08/15/2025) - Future Plans</a>
+              </p>
+              <img src="./img/thumbs/maronathumbnail.png" class="diarythumb">
+            </div>
+
+            <div class="menuclean">
+              <p>
+                <a href="diary/07.27.25.html" target="_blank">(07/27/2025) - Rest in Peace</a>
+              </p>
+              <img src="./img/thumbs/gravethumb.png" class="diarythumb">
+            </div>
+
+            <div class="menuclean">
+              <p>
+                <a href="diary/07.09.25.html" target="_blank">(07/09/2025) - Getting Worse and Better</a>
+              </p>
+              <img src="./img/thumbs/bridgethumbnail.png" class="diarythumb">
+            </div>
+
+            <div class="menuclean">
+              <p>
+                <a href="diary/06.16.25.html" target="_blank">(06/16/2025) - Welcome to my Website!</a>
+              </p>
+              <img src="./img/thumbs/tumbs.png" class="diarythumb">
+            </div>
 
           </div>
-        </main>
-      </div>
+          <!--Banner Below HTML Links. Planning to add an Array at some point.-->
 
-      <div>
-        <a href="https://starfall.gallery">return home</a>
-      </div>
-
+        </div>
+      </main>
     </div>
-    <script>
-      var coll = document.getElementsByClassName("date");
-      var i;
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
-  </body>
+    <div style="padding: 5px;">
+      <a href="https://starfall.gallery" style="padding-bottom: 10px; margin-left: 3%;">return home</a>
+    </div>
+
+  </div>
+
+
+  <script>
+    var coll = document.getElementsByClassName("date");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
+
+
+<!-- fix the stupid ass mobile scaling, center everything. do the same for my blog pages -->
