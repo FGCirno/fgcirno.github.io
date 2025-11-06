@@ -8,9 +8,7 @@
     Thu, 06 Nov 2025 10:27:56 +0000
   </lastBuildDate>
   <ttl>20000</ttl>
-</channel>
-</rss>
-
+  
 <item>
   <title>My 2024 Trip to Paris</title>
   <description>
@@ -76,3 +74,6 @@
     Mon, 16 Jun 2025 00:00:00 +0000
   </pubDate>
 </item>
+
+</channel>
+</rss>
