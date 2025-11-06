@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Starfall Gallery</title>
+  <description>Watch me spill my mind.</description>
+  <link>https://rssguide.neocities.org</link>
+  <lastBuildDate>
+    Thu, 06 Nov 2025 10:27:56 +0000
+  </lastBuildDate>
+  <ttl>20000</ttl>
+</channel>
+</rss>
+
+<item>
+  <title>My 2024 Trip to Paris</title>
+  <description>
+    I visited Paris last year. It was a lot of fun
+  </description>
+  <link>https://starfall.gallery/diary/11.06.25.html</link>
+  <pubDate>
+    Thu, 06 Nov 2025 10:27:56 +0000
+  </pubDate>
+</item>
+
+<item>
+  <title>Places Lost to Time</title>
+  <description>
+    I can't go back to these places, but at least I can remember them.
+  </description>
+  <link>https://starfall.gallery/diary/10.19.25.html</link>
+  <pubDate>
+    Sun, 19 Oct 2025 00:00:00 +0000
+  </pubDate>
+</item>
+
+<item>
+  <title>Future Plans</title>
+  <description>
+    Working towards my future career.
+  </description>
+  <link>https://starfall.gallery/diary/08.15.25.html</link>
+  <pubDate>
+    Fri, 15 Aug 2025 00:00:00 +0000
+  </pubDate>
+</item>
+
+<item>
+  <title>Rest in Peace</title>
+  <description>
+    Rest in Peace, Dad.
+  </description>
+  <link>https://starfall.gallery/diary/07.27.25.html</link>
+  <pubDate>
+    Sun, 27 Jul 2025 00:00:00 +0000
+  </pubDate>
+</item>
+
+<item>
+  <title>Getting Worse and Better</title>
+  <description>
+    Talking about getting sick and learning to better myself
+  </description>
+  <link>https://starfall.gallery/diary/07.09.25.html</link>
+  <pubDate>
+    Wed, 09 Jul 2025 00:00:00 +0000
+  </pubDate>
+</item>
+
+<item>
+  <title>Welcome to my Website!</title>
+  <description>
+    An introduction to Starfall.Gallery
+  </description>
+  <link>https://starfall.gallery/diary/06.16.25.html</link>
+  <pubDate>
+    Mon, 16 Jun 2025 00:00:00 +0000
+  </pubDate>
+</item>
