@@ -8,6 +8,17 @@
     Thu, 06 Nov 2025 10:27:56 +0000
   </lastBuildDate>
   <ttl>20000</ttl>
+
+  <item>
+  <title>My First Video</title>
+  <description>
+    I've been working on something special. Before it releases, I'd like to tell you a bit about it.
+  </description>
+  <link>https://starfall.gallery/diary/11.18.25.html</link>
+  <pubDate>
+    Thu, 18 Nov 2025 07:32:56 +0000
+  </pubDate>
+</item>
   
 <item>
   <title>My 2024 Trip to Paris</title>
